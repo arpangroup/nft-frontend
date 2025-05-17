@@ -4,3 +4,6 @@ export {default as NavbarV2} from './navbarV2/NavbarV2';
 export {default as Header} from './header/Header';
 export {default as Bids} from './bids/Bids';
 export {default as Footer} from './footer/Footer';
+
+
+export {default as Card1} from './card1/Card1';

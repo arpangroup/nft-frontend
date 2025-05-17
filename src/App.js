@@ -1,6 +1,6 @@
 import './App.css';
 import {Navbar,NavbarV2,Footer} from './components'
-import {Home,Profile,Item, Create,Login,Register, Settings, Forgot} from './pages'
+import {Home,Profile,Item, Create,Login,Register, Settings, Forgot, Level} from './pages'
 import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
@@ -23,6 +23,10 @@ function App() {
           <Route path="/register" element={ <Register />} />
           <Route path="/forgot" element={ <Forgot />} />
           <Route path="/settings" element={<Settings />} />
+
+
+          <Route path="/level" element={<Level />} />
+
         </Routes>
        </div>
        {/* <Footer/> */}

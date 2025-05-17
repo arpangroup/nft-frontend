@@ -130,7 +130,7 @@ const NavbarV2 = () => {
             </li>
 
              <li className={isActive("/tree") ? "active" : ""}>
-              <Link to="/tree">
+              <Link to="/level">
                 <div className="menu-content">
                   <RiNotificationLine className="sidebar-icon" />
                   <span className="menu-label">Level</span>
