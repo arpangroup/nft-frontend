@@ -1,11 +1,11 @@
 import './App.css';
 import {Navbar,NavbarV2,Footer} from './components'
-import {Home,Profile,Item, Create,Login,Register, Settings, Forgot, Level} from './pages'
+import {Home,Profile,Item, Create,Login,Register, Settings, Forgot, Level, UserDashboardPage, MLMTree} from './pages'
 import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
   const location = useLocation();
-  const hideNavbarPaths = ['/login', '/register', '/forgot'];
+  const hideNavbarPaths = ['/login', '/register', '/forgot', '/tree'];
   const showNavbar = !hideNavbarPaths.includes(location.pathname);
 
   return (
@@ -26,6 +26,8 @@ function App() {
 
 
           <Route path="/level" element={<Level />} />
+          <Route path="/dashboard" element={<UserDashboardPage />} />
+          <Route path="/tree" element={<MLMTree />} />
 
         </Routes>
        </div>

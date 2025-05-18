@@ -6,4 +6,8 @@ export {default as Bids} from './bids/Bids';
 export {default as Footer} from './footer/Footer';
 
 
+export {default as Transaction} from './transaction/Transaction';
+export {default as Branding} from './branding/Branding';
+
+
 export {default as Card1} from './card1/Card1';
